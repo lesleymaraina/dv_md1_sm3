@@ -1,0 +1,487 @@
+---
+title: "Why Visualization Matters in Biomed & Clinical Research: Seeing Nuance, Enabling Discovery"
+author: "Lesley Chapman Hannah, Ph.D., M.S.<br>College of Graduate Studies<br>Northeast Ohio Medical University"
+
+format: 
+  revealjs:
+    #theme: solarized
+    css: style.css
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/Flame.jpg
+    #css: styles.css
+    
+---
+
+## Lecture Overview
+
+::: incremental
+- Discuss how data visualization turns biomedical and clinical data into interpretable evidence
+- Match clinical/scientific questions to visuals that reveal trends in biomedical and clinical data
+    - time, uncertainty, and trade-offs (survival, subgroups, diagnostics, harms) 
+:::
+
+
+::: footer
+
+:::
+
+
+
+## <span style="font-size:80%">Turning biomedical and clinical data into interpretable evidence</span> {.smaller}
+<br>
+Expose heterogeneity and nuances of subgroups
+
+::: incremental
+-  Stratified visuals (forest plots, small-multiple curves, patient-level response panels) show variation across subgroups, sites, and biomarkers
+- Alternative: general bar plots that provide an overall summary of column data
+
+:::
+
+
+::: footer
+:::
+
+## <span style="font-size:80%">Turning biomedical and clinical data into interpretable evidence</span> {.smaller}
+
+<br>
+Make time and uncertainty legible for credible inference
+
+::: incremental
+- Good figures carry the when (timelines, numbers-at-risk) and the how sure (bands/intervals) inside the plot
+- Alternative: results that show a single endpoint or p-value
+
+
+:::
+::: footer
+:::
+
+
+
+
+
+## <span style="font-size:80%">Turning biomedical and clinical data into interpretable evidence</span> {.smaller}
+
+<br>
+Performance Made Visible
+
+::: incremental
+- Visual diagnostics (Receiver Operating Characteristic (ROC)/AUC curves) turn abstract accuracy into concrete weaknesses and improvements, guiding threshold selection, recalibration
+
+:::
+::: footer
+:::
+
+
+
+
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+
+::: incremental
+- Outcomes over time (time + uncertainty)
+- Subgroups & heterogeneity (uncertainty around effects)
+- Diagnostics & thresholds (trade-offs)
+- Patient-Level Response Patterns 
+:::
+
+
+::: footer
+:::
+
+
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+<br>
+**Outcomes over time (time + uncertainty)**
+
+**Research Logic**: Research question centered on how an outcome evolves rather than a single instance 
+
+::: incremental
+-  **Consider**: How an event evolves, how fast intervention X accumulates, how long an intervention’s benefits lasts, or how trajectories change after an exposure or intervention 
+:::
+
+
+::: footer
+:::
+
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+<br>
+**Outcomes over time (time + uncertainty)**
+
+**Kaplan–Meier (KM) curves with confidence intervals**
+
+::: incremental
+-  *Example question*: Does treatment A improve time-to-event vs control?
+-  *Why*: Shows survival/progression over time 
+:::
+
+
+::: footer
+:::
+
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+
+**Outcomes over time (time + uncertainty)**
+
+::: columns
+::: {.column width="50%"}
+
+::: incremental
+- Study to determine how well a monoclonal IgG1 antibody that targets the epidermal growth factor receptor (EGFR) impacts survival and how survival status is impacted by mutation status in cancer predisposition genes (i.e.: BRAF)
+- Shows stepwise worsening of survival from all-wild-type, RAS-mutant, BRAF-mutant groups
+:::
+
+:::
+
+::: {.column width="50%"}
+![](images/Kaplan_meijer.png){.border .border-thick}
+:::
+<span style="font-size:60%">Maughan, T.S. (2011). Lancet.</span>
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+
+**Outcomes over time (time + uncertainty)**
+
+::: columns
+::: {.column width="50%"}
+
+::: incremental
+
+**Key Takeaways:**
+
+- Turns a single endpoint into interpretable dynamics: onset, durability, and timing of benefits/harms
+- Supports decision points (e.g., when to escalate therapy, schedule monitoring, or declare futility)
+:::
+
+:::
+
+::: {.column width="50%"}
+
+:::
+
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+<br>
+**Subgroups & heterogeneity (uncertainty around effects)**
+
+
+::: incremental
+-  Consider for whom, where, and under what conditions does your intervention differ and how certain are we about those differences?
+- Variations between groups may occur based on patient characteristics (age,  biomarker, comorbidity), setting (site, lot, scanner), or time
+- *Goal*: generate visuals that show both the estimated effects and their uncertainty
+
+:::
+
+
+::: footer
+:::
+
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+<br>
+**Subgroups & heterogeneity (uncertainty around effects)**
+
+
+::: incremental
+**Forest plots (treatment effects by subgroup)**
+
+ - *Question*: Is the effect consistent across age/site/biomarker strata?
+ - *Why*: Each row shows an effect size with 95% confidence interval
+
+:::
+
+
+::: footer
+:::
+
+
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+
+**Subgroups & heterogeneity (uncertainty around effects)**
+
+::: columns
+::: {.column width="50%"}
+
+::: incremental
+- Study to determine how well low-dose aspirin prevents fractures in 70+ adults
+- Plot shows treatment effect of aspirin on first fracture (hazard ratio) across prespecified subgroups (age bands,  etc)
+- Key takeaway: no subgroup shows a materially different effect from the overall null result
+
+:::
+
+:::
+
+::: {.column width="50%"}
+![](images/JAMA_forest.png){.border .border-thick}
+:::
+<span style="font-size:60%">Barker, A.L., et al. (2022). JAMA.</span>
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+<br>
+**Subgroups & heterogeneity (uncertainty around effects)**
+
+
+::: incremental
+ - Prevents over-reliance on a grand average that may hide harm or benefit for key groups
+- Supports precision medicine (targeting) and implementation (which sites/protocols need adjustment)
+- Helps separate signal from noise: wide, overlapping confidence intervals suggest caution; stable patterns across strata strengthen claims
+
+:::
+
+
+::: footer
+:::
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+<br>
+**Model Diagnostics & thresholds (trade-offs)**
+
+::: incremental
+**Visualizations to determine**:
+- Measure of statistical performance to guide modeling of biomedical event or intervention
+- How well a test/model distinguishes conditions 
+- Where to set a cutoff that balances misses vs false alarms 
+:::
+
+
+::: footer
+:::
+
+
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+<br>
+**Model Diagnostics & thresholds (trade-offs)**
+
+::: incremental
+**ROC curves with AUC + marked operating point(s)**:
+- *Question*: What sensitivity/specificity trade-off is achievable, and where will we operate?
+- *Why*: Makes the trade-off explicit; annotate the chosen threshold.
+:::
+
+
+::: footer
+:::
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+
+**Model Diagnostics & thresholds (trade-offs)**
+
+::: columns
+::: {.column width="50%"}
+
+::: incremental
+- Group developed a machine learning model to predict the probability of acute myocardial infarction (AMI)
+- ROC curve shows the ability of the model to separate individuals with AMI and without AMI 
+
+
+:::
+
+:::
+
+::: {.column width="50%"}
+![](images/41591_2023_2325_Fig2_HTML.png){.border .border-thick}
+:::
+<span style="font-size:60%">Doudesis, D., et. al. (2023). Nature Medicine..</span>
+:::
+::: footer
+:::
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+
+**Model Diagnostics & thresholds (trade-offs)**
+
+::: columns
+::: {.column width="50%"}
+
+::: incremental
+- Helps identify models that overfit or fail to generalize: Prevents deployment of models that look great on paper but fail at low prevalence or are miscalibrated 
+- Aligns clinical, operations, and leadership on where to draw the line and what the resource impact will be
+
+:::
+
+:::
+
+::: {.column width="50%"}
+![](images/41591_2023_2325_Fig2_HTML.png){.border .border-thick}
+:::
+<span style="font-size:60%">Doudesis, D., et. al. (2023). Nature Medicine..</span>
+:::
+::: footer
+:::
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+<br>
+**Patient-Level Response Patterns**
+
+
+::: incremental
+Data visualizations that capture how much each individual changes (depth) and for how long they sustain that change (durability)—instead of just the average effect
+
+:::
+
+
+::: footer
+:::
+
+
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+<br>
+**Patient-Level Response Patterns**
+
+
+::: incremental
+**Waterfall plots (treatment and control groups) with CI on summary metrics**
+
+- *Question*: What fraction achieves a clinically meaningful reduction?
+ -	*Why*: Visualizes the spread of individual effects
+- *Response*: Show percent change from baseline
+
+
+:::
+
+
+::: footer
+:::
+
+
+
+
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+
+**Patient-Level Response Patterns**
+
+::: columns
+::: {.column width="50%"}
+
+
+::: incremental
+
+**Study Background**
+
+- Results from a randomized, double-blind clinical trial  201 adolescents (12<18 yrs) with obesity who received:
+- GLP-1 receptor agonist [enhances glucose-dependent insulin release] leads to lower blood sugar + lifestyle 
+- Or placebo + lifestyle 
+
+:::
+:::
+::: {.column width="50%"}
+![](images/Nejmoa2208601_f1.jpg){.border .border-thick}
+:::
+<span style="font-size:60%">Weghuber, D, et. al. (2022). Once-Weekly Semaglutide in Adolescents with Obesity. NEJM.</span>
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+**Patient-Level Response Patterns**
+
+::: columns
+::: {.column width="50%"}
+
+
+::: incremental
+
+**Study Findings**
+
+- Most adolescents on placebo + lifestyle had little to no reduction in BMI by week 68
+- Many show stable or increased BMI (bars at or above 0%)
+- Only a small minority crossed clinically meaningful loss thresholds (≥5%, ≥10%, ≥15%) 
+:::
+:::
+::: {.column width="50%"}
+![](images/Nejmoa2208601_f1.jpg){.border .border-thick}
+:::
+<span style="font-size:60%">Weghuber, D, et. al. (2022). Once-Weekly Semaglutide in Adolescents with Obesity. NEJM.</span>
+:::
+::: footer
+:::
+
+
+
+
+## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+<br>
+**Patient-Level Response Patterns **
+
+::: incremental
+**Visualizations to determine**:
+
+- Helps define how treatment or intervention benefits or harm a certain group 
+- Estimates the duration of the benefit 
+
+:::
+
+
+::: footer
+:::
+
+
+
+## <span style="font-size:80%">Summary</span> {.smaller}
+
+<br>
+
+
+::: incremental
+- Turn clinical and biomedical data into decision-ready evidence by showing:
+  - time (trajectories/KM)
+  - uncertainty (bands/intervals)
+  - Context (baselines, denominators)
+  - Rationale : Allow stakeholders to answer questions beyond "is the outcome significant": what happened, when, how much, and how sure are 
+- Figures for model evaluation
+- Visuals that explicitly show time, uncertainty, heterogeneity, and prevalence-dependent trade-offs turn analyses into decision-ready evidence
+
+
+:::
+
+
+::: footer
+:::
+
+
+
+
+
+
+
+
