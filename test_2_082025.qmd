@@ -1,6 +1,7 @@
 ---
-title: "Why Visualization Matters in Biomedical & Clinical Research: Seeing Nuance and Enabling Discovery"
-author: "Lesley Chapman Hannah, Ph.D., M.S.<br>College of Graduate Studies<br>Northeast Ohio Medical University"
+title: "Why Visualization Matters: Clarity in Biomedical & Clinical Research"
+author: "<br><br><span style='font-size:25px;'><strong>Lesley Chapman Hannah, Ph.D., M.S.</strong></span><br>College of Graduate Studies<br>Northeast Ohio Medical University"
+
 
 format: 
   revealjs:
@@ -15,77 +16,20 @@ format:
     
 ---
 
-## Lecture Overview
-
-::: incremental
-- Discuss how data visualization turns biomedical and clinical data into interpretable evidence
-- Match clinical/scientific questions to visuals that reveal trends in biomedical and clinical data
-    - time, uncertainty, and trade-offs (survival, subgroups, diagnostics, harms) 
-:::
-
-
-::: footer
-
-:::
 
 
 
-## <span style="font-size:80%">Turning biomedical and clinical data into interpretable evidence</span> {.smaller}
+
+## <span style="font-size:80%">Why data visualization matters in biomedical and clinical research</span> {.smaller}
 <br>
-Expose heterogeneity and nuances of subgroups
 
 ::: incremental
--  Stratified visuals (forest plots, small-multiple curves, patient-level response panels) show variation across subgroups, sites, and biomarkers
-- Alternative: general bar plots that provide an overall summary of column data
-
-:::
-
-
-::: footer
-:::
-
-## <span style="font-size:80%">Turning biomedical and clinical data into interpretable evidence</span> {.smaller}
-
-<br>
-Make time and uncertainty legible for credible inference
-
-::: incremental
-- Good figures carry the when (timelines, numbers-at-risk) and the how sure (bands/intervals) inside the plot
-- Alternative: results that show a single endpoint or p-value
-
-
-:::
-::: footer
-:::
-
-
-
-
-
-## <span style="font-size:80%">Turning biomedical and clinical data into interpretable evidence</span> {.smaller}
-
-<br>
-Performance Made Visible
-
-::: incremental
-- Visual diagnostics (Receiver Operating Characteristic (ROC)/AUC curves) turn abstract accuracy into concrete weaknesses and improvements, guiding threshold selection, recalibration
-
-:::
-::: footer
-:::
-
-
-
-
-
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
-
-
-::: incremental
-- Outcomes over time (time + uncertainty)
-- Subgroups & heterogeneity (uncertainty around effects)
-- Diagnostics & thresholds (trade-offs)
-- Patient-Level Response Patterns 
+- Simplifies complex dataset
+- Reveals hidden insights
+- Enables real-time monitoring
+- Accelerates hypothesis generation
+- Engages broader audiences
+- Supports precision medicine
 :::
 
 
@@ -93,78 +37,121 @@ Performance Made Visible
 :::
 
 
+## <span style="font-size:80%">Simplifies complex dataset</span> {.smaller}
 
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
-
-<br>
-**Outcomes over time (time + uncertainty)**
-
-**Research Logic**: Research question centered on how an outcome evolves rather than a single instance 
+::: columns
+::: {.column width="100%"}
 
 ::: incremental
--  **Consider**: How an event evolves, how fast intervention X accumulates, how long an intervention’s benefits lasts, or how trajectories change after an exposure or intervention 
+- Biomedical research often produces multidimensional datasets—ranging from genomic sequencing outputs to large-scale clinical registries
+- Visualization serves as a compression tool, distilling these high-dimensional datasets into interpretable forms
+- It is estimated that by the end of 2025, genomics research will generate 2 to 40 exabytes of data annually$^1$
+- One human whole-genome sequence alone consumes ~200 gigabytes (raw data) per individual$^1$
 :::
 
+:::
 
+::: {.column width="50%"}
+
+:::
+
+<span style="font-size:40%">1.genome.gov</span>
+:::
 ::: footer
 :::
 
 
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+## <span style="font-size:80%">Simplifies complex dataset</span> {.smaller}
 
-<br>
-**Outcomes over time (time + uncertainty)**
-
-**Kaplan–Meier (KM) curves with confidence intervals**
-
-::: incremental
--  *Example question*: Does treatment A improve time-to-event vs control?
--  *Why*: Shows survival/progression over time 
-:::
-
-
-::: footer
-:::
-
-
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
-
-
-**Outcomes over time (time + uncertainty)**
 
 ::: columns
 ::: {.column width="50%"}
 
 ::: incremental
-- Study to determine how well a monoclonal IgG1 antibody that targets the epidermal growth factor receptor (EGFR) impacts survival and how survival status is impacted by mutation status in cancer predisposition genes (i.e.: BRAF)
-- Shows stepwise worsening of survival from all-wild-type, RAS-mutant, BRAF-mutant groups
+- GTEx Gene Expression heatmaps of gene activity 
+
+    – Gene expresion across dozens of tissues
+    - red = genes more active
+    - blue = genes less active
+    
+- Turns large amounts of raw genetic numbers into a simple color-coded picture of which genes “turn on” in different organs
 :::
 
 :::
 
 ::: {.column width="50%"}
-![](images/Kaplan_meijer.png){.border .border-thick}
+![](images/heatmap_v1.jpg){.border .border-thick}
 :::
-<span style="font-size:60%">Maughan, T.S. (2011). Lancet.</span>
+
+<span style="font-size:40%">Jung, J. et. al. (2024). Plos One.</span>
 :::
 ::: footer
 :::
 
 
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+## <span style="font-size:80%">Reveals hidden insights</span> {.smaller}
+
+::: columns
+::: {.column width="100%"}
+
+::: incremental
+- Patterns that remain opaque in raw tables can emerge once data are visualized
+- Visualization doesn’t merely summarize data—it surfaces latent structures
+- Example: Kaplan–Meier survival curves reveal divergence in patient outcomes over time
+
+  - Enables investigators to assess therapeutic benefit or harm with immediacy
+:::
+
+:::
+
+::: {.column width="50%"}
+
+:::
+
+:::
+::: footer
+:::
 
 
-**Outcomes over time (time + uncertainty)**
+## <span style="font-size:80%">Reveals hidden insights</span> {.smaller}
 
 ::: columns
 ::: {.column width="50%"}
 
 ::: incremental
+- Kaplan–Meier survival curves comparing overall survival of elderly patients with limited-stage small-cell lung cancer who received:
 
-**Key Takeaways:**
+  - chemoradiotherapy (CRT)
+  - chemotherapy (CT) alone
+  
+- Chemoradiotherapy improves survival in elderly patients with limited-stage small-cell lung cancer
+:::
 
-- Turns a single endpoint into interpretable dynamics: onset, durability, and timing of benefits/harms
-- Supports decision points (e.g., when to escalate therapy, schedule monitoring, or declare futility)
+:::
+
+::: {.column width="50%"}
+![](images/km_curve_2.png){.border .border-thick}
+:::
+
+<span style="font-size:40%">Corso, C. et. al. Journal of Clinical Oncology(2015)</span>
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Enables Real-Time Monitoring</span> {.smaller}
+
+::: columns
+::: {.column width="100%"}
+
+::: incremental
+- Visualization acts as a temporal bridge between raw data and actionable intervention
+- In clinical research and translational, visualization underpins decision-making through continuous monitoring
+- Example: dashboards provide dynamic visual outputs of physiologic parameters—arterial blood pressure, oxygen saturation, and cardiac rhythm
+- Dashboards provide clinicians with up-to-date information, enabling timely interventions
+- Consolidate various data sources, offering a comprehensive view of patient health
+- Visual representations of data assist in making informed clinical decisions
+
 :::
 
 :::
@@ -178,305 +165,271 @@ Performance Made Visible
 :::
 
 
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
-
-<br>
-**Subgroups & heterogeneity (uncertainty around effects)**
-
-
-::: incremental
--  Consider for whom, where, and under what conditions does your intervention differ and how certain are we about those differences?
-- Variations between groups may occur based on patient characteristics (age,  biomarker, comorbidity), setting (site, lot, scanner), or time
-- *Goal*: generate visuals that show both the estimated effects and their uncertainty
-
-:::
-
-
-::: footer
-:::
-
-
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
-
-<br>
-**Subgroups & heterogeneity (uncertainty around effects)**
-
-
-::: incremental
-**Forest plots (treatment effects by subgroup)**
-
- - *Question*: Is the effect consistent across age/site/biomarker strata?
- - *Why*: Each row shows an effect size with 95% confidence interval
-
-:::
-
-
-::: footer
-:::
-
-
-
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
-
-
-**Subgroups & heterogeneity (uncertainty around effects)**
+## <span style="font-size:80%">Enables Real-Time Monitoring</span> {.smaller}
 
 ::: columns
 ::: {.column width="50%"}
 
 ::: incremental
-- Study to determine how well low-dose aspirin prevents fractures in 70+ adults
-- Plot shows treatment effect of aspirin on first fracture (hazard ratio) across prespecified subgroups (age bands,  etc)
-- Key takeaway: no subgroup shows a materially different effect from the overall null result
+- Displays patient data related to diabetes
+- Data includes clinical and laboratory results, complications, and co-morbidities
+- Collectively these data could support clinical decision-making
+:::
+
+:::
+
+::: {.column width="50%"}
+![](images/dashboard_diabetes.jpeg){.border .border-thick}
+:::
+
+<span style="font-size:40%">Kannan, S., et. al. Journal of Diabetes Science and Technology. (2019)</span>
+:::
+::: footer
+:::
+
+## <span style="font-size:80%">Accelerates Hypothesis Generation</span> {.smaller}
+
+::: columns
+::: {.column width="100%"}
+
+::: incremental
+- Data visualization is not just a tool for summarizing data, strategy used to generate new ideas
+- Scientific progress hinges on asking the right questions and these questions often emerge when patterns are visible
+- Data visualization acts as a catalyst for this process
+- Raw datasets (i.e.: genomic sequences and neuroimaging scans) are large and multidimensional, patterns buried in numbers are easy to miss
+- Visualization transforms these data into an accessible form, revealing relationships, trends, or anomalies that could inform new hypotheses
 
 :::
 
 :::
 
 ::: {.column width="50%"}
-![](images/JAMA_forest.png){.border .border-thick}
+
 :::
-<span style="font-size:60%">Barker, A.L., et al. (2022). JAMA.</span>
+
 :::
 ::: footer
 :::
 
 
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
-
-<br>
-**Subgroups & heterogeneity (uncertainty around effects)**
-
-
-::: incremental
- - Prevents over-reliance on a grand average that may hide harm or benefit for key groups
-- Supports precision medicine (targeting) and implementation (which sites/protocols need adjustment)
-- Helps separate signal from noise: wide, overlapping confidence intervals suggest caution; stable patterns across strata strengthen claims
-
-:::
-
-
-::: footer
-:::
-
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
-
-<br>
-**Model Diagnostics & thresholds (trade-offs)**
-
-::: incremental
-**Visualizations to determine**:
-- Measure of statistical performance to guide modeling of biomedical event or intervention
-- How well a test/model distinguishes conditions 
-- Where to set a cutoff that balances misses vs false alarms 
-:::
-
-
-::: footer
-:::
-
-
-
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
-
-<br>
-**Model Diagnostics & thresholds (trade-offs)**
-
-::: incremental
-**ROC curves with AUC + marked operating point(s)**:
-- *Question*: What sensitivity/specificity trade-off is achievable, and where will we operate?
-- *Why*: Makes the trade-off explicit; annotate the chosen threshold.
-:::
-
-
-::: footer
-:::
-
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
-
-
-**Model Diagnostics & thresholds (trade-offs)**
+## <span style="font-size:80%">Accelerates Hypothesis Generation</span> {.smaller}
 
 ::: columns
 ::: {.column width="50%"}
 
 ::: incremental
-- Group developed a machine learning model to predict the probability of acute myocardial infarction (AMI)
-- ROC curve shows the ability of the model to separate individuals with AMI and without AMI 
-
-
+- Automated tool that integrates various genomic data types—such as large genomic variants (structural variants [SVs]), gene expression, copy number alterations, and genome annotations—to identify, annotate, and visualize recurrent SVs and their targeted hotspot regions
+- Allows researchs to identify SVs associated with changes in gene expression, particularly in the context of prostate cancer
+- These genomic regions of interest could affect gene expression and are associated with cancer progression
 :::
 
 :::
 
 ::: {.column width="50%"}
-![](images/41591_2023_2325_Fig2_HTML.png){.border .border-thick}
+![](images/circos_SV_plot.png){.border .border-thick}
 :::
-<span style="font-size:60%">Doudesis, D., et. al. (2023). Nature Medicine..</span>
+
+<span style="font-size:40%">Eteleeb, A.M., et. al. Nature Scientific Reports. (2020)</span>
 :::
 ::: footer
 :::
 
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
+
+## <span style="font-size:80%">Engages broader audiences</span> {.smaller}
+
+::: columns
+::: {.column width="100%"}
+
+::: incremental
+- Biomedical findings must be communicated beyond specialized subfields to stakeholders such as clinicians, policymakers, and the public
+- Effective visualization enables rapid identification of key outcomes 
+- Makes complex research understandable to key stakeholders
+- Data visuals have the potential to broaden the impact and uptake of biomedical research
+:::
+
+:::
+
+::: {.column width="50%"}
+
+:::
+
+:::
+::: footer
+:::
 
 
-**Model Diagnostics & thresholds (trade-offs)**
+## <span style="font-size:80%">Engages broader audiences</span> {.smaller}
+
+::: columns
+::: {.column width="100%"}
+
+::: incremental
+- Visualizations make it easier to share findings in publications, presentations, and public health communications
+- Visual abstract in research articles helps broader audiences (clinicians, students, public) grasp key points quickly
+- Not everyone is a scientist—but science can impact everyone, and data visuals help bridge that gap
+:::
+
+:::
+
+::: {.column width="30%"}
+
+:::
+
+
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Engages broader audiences</span> {.smaller}
 
 ::: columns
 ::: {.column width="50%"}
 
 ::: incremental
-- Helps identify models that overfit or fail to generalize: Prevents deployment of models that look great on paper but fail at low prevalence or are miscalibrated 
-- Aligns clinical, operations, and leadership on where to draw the line and what the resource impact will be
+- Visual abstract that summazies a complex RCT
+- *Research Aim*: Determine the effect of a monoclonal antibody drug versus usual care in hospitalized COVID-19 patients with moderate/severe pneumonia
+- *Population*: Study group (130 participants, 89 men and 42 women, median age 64)
+- *Intervention*: Intervention group (monoclonal antibody + usual care) versus control group (usual care only)
+- *Primary Outcome*: The group that received the monoclonal antibody + usual care led to better survival without needing advanced respiratory support
+:::
+
+:::
+
+::: {.column width="50%"}
+![](images/JAMA_simple_abstract.png){.border .border-thick}
+:::
+
+<span style="font-size:40%">Ibrahim , A.M., et. al. JAMA.(2018)</span>
+:::
+::: footer
+:::
+
+
+
+## <span style="font-size:80%">Supports Precision Medicine</span> {.smaller}
+
+::: columns
+::: {.column width="100%"}
+
+::: incremental
+Visualization in biomedical research performs two critical functions:
+
+  - *Integration*: Brings together heterogeneous data streams (genomics, biomarkers, clinical measures, lifestyle data)
+  - *Translation*: Converts those data into formats that clinicians and patients can interpret and use in real time
+
+- For instance, cancer and diabetes are complex diseases - even within a single patient, biology changes over time
+
+  - Visualization provides the scaffolding that allows us to see this heterogeneity and act upon it
+:::
+
+:::
+
+::: {.column width="50%"}
+
+:::
+
+:::
+::: footer
+:::
+
+
+## <span style="font-size:80%">Supports Precision Medicine</span> {.smaller}
+
+::: columns
+::: {.column width="50%"}
+Ambulatory Glucose Profile (AGP) Report: a summary dashboard of continuous glucose monitoring (CGM) data
+
+- Dashboard summary of a patient’s glucose control over time
+- Daily glucose curves (individual day traces overlapped)
+- Graphical representation to accompany Continuous Glucose Monitor
+- Can inform individual patients on lifestyle changes and insulin regimine
+
+::: incremental
 
 :::
 
 :::
 
 ::: {.column width="50%"}
-![](images/41591_2023_2325_Fig2_HTML.png){.border .border-thick}
+![](images/AGP_figure.png){.border .border-thick}
 :::
-<span style="font-size:60%">Doudesis, D., et. al. (2023). Nature Medicine..</span>
+
+<span style="font-size:40%">Martens, TW. Cleveland Clnic Journal of Medicine.(2024)</span>
 :::
 ::: footer
 :::
 
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
-
-<br>
-**Patient-Level Response Patterns**
-
-
-::: incremental
-Data visualizations that capture how much each individual changes (depth) and for how long they sustain that change (durability)—instead of just the average effect
-
-:::
-
-
-::: footer
-:::
-
-
-
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
-
-<br>
-**Patient-Level Response Patterns**
-
-
-::: incremental
-**Waterfall plots (treatment and control groups) with CI on summary metrics**
-
-- *Question*: What fraction achieves a clinically meaningful reduction?
- -	*Why*: Visualizes the spread of individual effects
-- *Response*: Show percent change from baseline
-
-
-:::
-
-
-::: footer
-:::
-
-
-
-
-
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
-
-
-**Patient-Level Response Patterns**
+## <span style="font-size:80%">Supports Precision Medicine</span> {.smaller}
 
 ::: columns
 ::: {.column width="50%"}
 
 
 ::: incremental
+Meaning for Precision Medicine
 
-**Study Background**
-
-- Results from a randomized, double-blind clinical trial  201 adolescents (12<18 yrs) with obesity who received:
-- GLP-1 receptor agonist [enhances glucose-dependent insulin release] leads to lower blood sugar + lifestyle 
-- Or placebo + lifestyle 
+- Personalized Monitoring Rather Than Population Averages
+- Pattern Recognition & Risk Stratification
+- Adaptive Feedback & Adjustment
+- Inform data that can be integrated in monitoring device that could help improve future care
+:::
 
 :::
-:::
+
 ::: {.column width="50%"}
-![](images/Nejmoa2208601_f1.jpg){.border .border-thick}
+![](images/AGP_figure.png){.border .border-thick}
 :::
-<span style="font-size:60%">Weghuber, D, et. al. (2022). Once-Weekly Semaglutide in Adolescents with Obesity. NEJM.</span>
+
+<span style="font-size:40%">Martens, TW. Cleveland Clnic Journal of Medicine.(2024)</span>
 :::
 ::: footer
 :::
-
-
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
-
-**Patient-Level Response Patterns**
-
-::: columns
-::: {.column width="50%"}
-
-
-::: incremental
-
-**Study Findings**
-
-- Most adolescents on placebo + lifestyle had little to no reduction in BMI by week 68
-- Many show stable or increased BMI (bars at or above 0%)
-- Only a small minority crossed clinically meaningful loss thresholds (≥5%, ≥10%, ≥15%) 
-:::
-:::
-::: {.column width="50%"}
-![](images/Nejmoa2208601_f1.jpg){.border .border-thick}
-:::
-<span style="font-size:60%">Weghuber, D, et. al. (2022). Once-Weekly Semaglutide in Adolescents with Obesity. NEJM.</span>
-:::
-::: footer
-:::
-
-
-
-
-## <span style="font-size:80%">Match clinical and scientific questions to visuals</span> {.smaller}
-
-<br>
-**Patient-Level Response Patterns **
-
-::: incremental
-**Visualizations to determine**:
-
-- Helps define how treatment or intervention benefits or harm a certain group 
-- Estimates the duration of the benefit 
-
-:::
-
-
-::: footer
-:::
-
 
 
 ## <span style="font-size:80%">Summary</span> {.smaller}
 
-<br>
+::: columns
+::: {.column width="100%"}
 
 
 ::: incremental
-- Turn clinical and biomedical data into decision-ready evidence by showing:
-  - time (trajectories/KM)
-  - uncertainty (bands/intervals)
-  - Context (baselines, denominators)
-  - Rationale : Allow stakeholders to answer questions beyond "is the outcome significant": what happened, when, how much, and how sure are 
-- Figures for model evaluation
-- Visuals that explicitly show time, uncertainty, heterogeneity, and prevalence-dependent trade-offs turn analyses into decision-ready evidence
+- **Simplify Complexity**
 
+  - Turn high-dimensional biomedical datasets (genomics, registries, EHRs) into interpretable visuals that aid decision-making
+
+- **Reveal Hidden Insights**
+
+  - Use visuals (e.g., Kaplan–Meier survival curves) to uncover patterns in outcomes and treatment effects not visible in raw tables
+
+- **Enable Real-Time Monitoring**
+  
+  - Build dashboards that integrate physiologic and clinical data streams, supporting rapid intervention in hospital and clinical settings
+
+- **Accelerate Hypothesis Generation**
+
+  - Spot patterns in genomic and clinical data to drive new scientific questions, guiding research priorities and innovation
+
+- **Support Precision Medicine & Broaden Impact**
+
+  - Translate heterogeneous data into patient-level insights (e.g., glucose monitoring dashboards), while also communicating findings to clinicians, managers,      policymakers, and the public
+  
+- **Later Module**: In-depth review of data visualization in the literature
+:::
 
 :::
 
+::: {.column width="0%"}
 
+:::
+
+:::
 ::: footer
 :::
+
+
+
+
 
 
 
