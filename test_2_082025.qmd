@@ -1,5 +1,5 @@
 ---
-title: "Why Visualization Matters: Clarity in Biomedical & Clinical Research"
+title: "Powering clinical and biomedical insight through data visualization"
 author: "<br><br><span style='font-size:25px;'><strong>Lesley Chapman Hannah, Ph.D., M.S.</strong></span><br>College of Graduate Studies<br>Northeast Ohio Medical University"
 
 
