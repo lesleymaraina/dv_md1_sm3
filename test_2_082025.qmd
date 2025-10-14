@@ -45,7 +45,6 @@ format:
 ::: incremental
 - Biomedical research often produces multidimensional datasets—ranging from genomic sequencing outputs to large-scale clinical registries
 - Visualization serves as a compression tool, distilling these high-dimensional datasets into interpretable forms
-- It is estimated that by the end of 2025, genomics research will generate 2 to 40 exabytes of data annually$^1$
 - One human whole-genome sequence alone consumes ~200 gigabytes (raw data) per individual$^1$
 :::
 
