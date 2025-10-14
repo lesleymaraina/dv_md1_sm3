@@ -168,7 +168,7 @@ format:
 ## <span style="font-size:80%">Enables Real-Time Monitoring</span> {.smaller}
 
 ::: columns
-::: {.column width="50%"}
+::: {.column width="30%"}
 
 ::: incremental
 - Displays patient data related to diabetes
@@ -178,7 +178,7 @@ format:
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="70%"}
 ![](images/dashboard_diabetes.jpeg){.border .border-thick}
 :::
 
@@ -284,19 +284,13 @@ format:
 ## <span style="font-size:80%">Engages broader audiences</span> {.smaller}
 
 ::: columns
-::: {.column width="50%"}
+::: {.column width="0%"}
 
-::: incremental
-- Visual abstract that summazies a complex RCT
-- *Research Aim*: Determine the effect of a monoclonal antibody drug versus usual care in hospitalized COVID-19 patients with moderate/severe pneumonia
-- *Population*: Study group (130 participants, 89 men and 42 women, median age 64)
-- *Intervention*: Intervention group (monoclonal antibody + usual care) versus control group (usual care only)
-- *Primary Outcome*: The group that received the monoclonal antibody + usual care led to better survival without needing advanced respiratory support
-:::
+
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="90%"}
 ![](images/JAMA_simple_abstract.png){.border .border-thick}
 :::
 
@@ -334,57 +328,8 @@ Visualization in biomedical research performs two critical functions:
 :::
 
 
-## <span style="font-size:80%">Supports Precision Medicine</span> {.smaller}
-
-::: columns
-::: {.column width="50%"}
-Ambulatory Glucose Profile (AGP) Report: a summary dashboard of continuous glucose monitoring (CGM) data
-
-- Dashboard summary of a patient’s glucose control over time
-- Daily glucose curves (individual day traces overlapped)
-- Graphical representation to accompany Continuous Glucose Monitor
-- Can inform individual patients on lifestyle changes and insulin regimine
-
-::: incremental
-
-:::
-
-:::
-
-::: {.column width="50%"}
-![](images/AGP_figure.png){.border .border-thick}
-:::
-
-<span style="font-size:40%">Martens, TW. Cleveland Clnic Journal of Medicine.(2024)</span>
-:::
-::: footer
-:::
-
-## <span style="font-size:80%">Supports Precision Medicine</span> {.smaller}
-
-::: columns
-::: {.column width="50%"}
 
 
-::: incremental
-Meaning for Precision Medicine
-
-- Personalized Monitoring Rather Than Population Averages
-- Pattern Recognition & Risk Stratification
-- Adaptive Feedback & Adjustment
-- Inform data that can be integrated in monitoring device that could help improve future care
-:::
-
-:::
-
-::: {.column width="50%"}
-![](images/AGP_figure.png){.border .border-thick}
-:::
-
-<span style="font-size:40%">Martens, TW. Cleveland Clnic Journal of Medicine.(2024)</span>
-:::
-::: footer
-:::
 
 
 ## <span style="font-size:80%">Summary</span> {.smaller}
